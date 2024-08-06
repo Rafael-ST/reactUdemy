@@ -12,12 +12,24 @@ import {SafeAreaView, Text, StyleSheet} from 'react-native'
 // import ContadorV2 from '../components/contador/ContadorV2'
 // import Diferenciar from '../components/Diferenciar'
 // import ParImpar from '../components/ParImpar'
-import Familia from '../components/Relacao/Familia'
-import Membro from '../components/Relacao/Membro'
-
+// import Familia from '../components/Relacao/Familia'
+// import Membro from '../components/Relacao/Membro'
+// import UsuarioLogado from '../components/UsuarioLogado'
+// import ListaProdutos from '../components/Produtos/ListaProdutos'
+// import ListaProdutosV2 from '../components/Produtos/ListaProdutosV2'
+import DigiteSeuNome from '../components/DigiteSeuNome'
 
 export default () => (
   <SafeAreaView style={style.App}>
+    <DigiteSeuNome/>
+    {/*<MinMax min="3" max="20"/>
+    <ListaProdutosV2/>
+    <ListaProdutos/>
+    <UsuarioLogado usuario={{nome: 'Gui', email: 'gui@gui.com'}}/>
+    <UsuarioLogado usuario={{nome: 'Ana'}}/>
+    <UsuarioLogado usuario={{email: 'carlos@empresa.com'}}/>
+    <UsuarioLogado usuario={null}/>
+    <UsuarioLogado usuario={{}}/>
     <Familia>
       <Membro nome="Bia" sobrenome="Arruda" />
       <Membro nome="Carlos" sobrenome="Arruda" />
@@ -26,7 +38,6 @@ export default () => (
       <Membro nome="Ana" sobrenome="Silva" />
       <Membro nome="Julia" sobrenome="Silva" />
     </Familia>
-    {/*<MinMax min="3" max="20"/>
     <ParImpar num={4}/>
     <Diferenciar/>
     <ContadorV2/>
